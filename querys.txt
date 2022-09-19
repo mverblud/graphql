@@ -1,0 +1,42 @@
+query {
+	getAllProducts {
+	  nombre
+    codigo
+
+	}
+}
+
+mutation{
+  addProduct(input:{
+        nombre: "Tijera ",
+        descripcion: "Tijera doble filo",
+        codigo: "TIJ",
+        img: ""
+        stock: 1
+  }){
+    _id
+    nombre
+  }
+}
+
+mutation {
+	deleteProduct(id:"6328bd59506acbface17568c"){
+    _id
+    nombre
+  }
+}
+
+
+mutation{
+  updateProduct( id: "63091b94cc91a01727963d0a", input:{
+        nombre: "Tijera ",
+        descripcion: "Tijera doble filo",
+        codigo: "TIJ",
+        img: ""
+        stock: 1
+  }){
+    _id
+    nombre
+  }
+}
+
